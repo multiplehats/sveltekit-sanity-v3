@@ -12,7 +12,7 @@ When I was working on a new project that involved [Sveltekit](https://kit.svelte
 
 ### 👀 Side-by-side Instant Content preview.
 
-I also go over on how we use Sanity's Side-by-side Instant Content preview feature with Sveltekit. And how you can easily implement this in your own SvelteKit applications. The code ([createPreviewSubscriptionStore](https://github.com/multiplehats/sveltekit-sanityv3/blob/main/src/lib/config/sanity/sveltekit/previewSubscriptionStore.ts#L10)) is mostly inspired from [Sanity's toolkit for Next.js](https://github.com/sanity-io/next-sanity).
+I also go over on how we use Sanity's Side-by-side Instant Content preview feature with Sveltekit. And how you can easily implement this in your own SvelteKit applications. The code ([createPreviewSubscriptionStore](https://github.com/multiplehats/sveltekit-sanity-v3/blob/main/src/lib/config/sanity/sveltekit/previewSubscriptionStore.ts#L10)) is mostly inspired from [Sanity's toolkit for Next.js](https://github.com/sanity-io/next-sanity).
 
 #### Learn more
 - [Introduction to Sanity Studio v3](https://beta.sanity.io/docs/platform/studio/v2-to-v3)
