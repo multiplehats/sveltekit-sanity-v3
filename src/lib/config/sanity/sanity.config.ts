@@ -14,7 +14,7 @@ import postType from '$lib/config/sanity/schemas/post';
 /*------------------------------------*/
 
 export default createConfig({
-	basePath: '/admin',
+	basePath: '/studio',
 	projectId: import.meta.env.VITE_SANITY_PROJECT_ID,
 	dataset: import.meta.env.VITE_SANITY_DATASET,
 	title: app.appName + ' - Studio',

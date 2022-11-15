@@ -1,3 +1,5 @@
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmultiplehats%2Fsveltekit-sanity-v3&env=VITE_SANITY_PROJECT_ID,VITE_SANITY_DATASET,VITE_SANITY_PREVIEW_SECRET,SANITY_API_READ_TOKEN,SANITY_API_WRITE_TOKEN&envDescription=These%20API%20keys%20are%20needed%20from%20Sanity%20to%20run%20this%20app.&project-name=my-sveltekit-sanity-v3&repo-name=my-svelte-sanity-v3)
+
 # Sveltekit x Sanity Studio v3
 
 Hi there 👋! This is a repo for my talk at the [Sanity.io Virtual Meetup - Autumn 2022](https://www.meetup.com/meetup-group-dvjyrjdv/events/289456759/).
