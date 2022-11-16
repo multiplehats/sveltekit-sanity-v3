@@ -1,4 +1,3 @@
-import { createConfig, type Slug } from 'sanity';
 import { PostsPreview } from './components/PostsPreview';
 import app from '../app';
 
@@ -13,7 +12,7 @@ import authorType from '$lib/config/sanity/schemas/author';
 import postType from '$lib/config/sanity/schemas/post';
 /*------------------------------------*/
 
-export default createConfig({
+export default {
 	basePath: '/studio',
 	projectId: import.meta.env.VITE_SANITY_PROJECT_ID,
 	dataset: import.meta.env.VITE_SANITY_DATASET,
@@ -68,4 +67,4 @@ export default createConfig({
 			}
 		},
 	},
-});
+};

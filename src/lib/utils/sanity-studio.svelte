@@ -1,8 +1,5 @@
-<script lang="ts" context="module">
-  import { renderStudio, createConfig, type StudioProps } from "sanity";
-</script>
-
 <script lang="ts">
+  import { renderStudio, createConfig, type StudioProps } from "sanity";
   import { onMount } from "svelte";
 
   export let config: StudioProps["config"];
@@ -33,7 +30,7 @@
     height: 100vh;
   }
 
-  :global(#svelte-studio > div) {
+  #svelte-studio > div {
     height: 100%;
   }
 </style>

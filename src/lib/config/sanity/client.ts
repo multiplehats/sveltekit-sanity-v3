@@ -3,7 +3,7 @@ import type { ClientConfig, SanityClient } from '@sanity/client';
 import { env } from '$env/dynamic/private';
 import { sanityConfig } from './config';
 
-function createClient(config: ClientConfig): SanityClient {
+const createClient = (config: ClientConfig): SanityClient => {
 	return sanityClient(config);
 }
 

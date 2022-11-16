@@ -1,6 +1,6 @@
 import { getSanityServerClient, overlayDrafts } from '$lib/config/sanity/client';
 import { postQuery } from '$lib/config/sanity/queries';
-import { Post } from '$lib/types';
+import type { Post } from '$lib/types';
 import { error } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
 
