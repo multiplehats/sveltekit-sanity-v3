@@ -2,7 +2,7 @@
 
 # Sveltekit x Sanity Studio v3
 
-Hi there 👋! This is a repo for my talk at the [Sanity.io Virtual Meetup - Autumn 2022](https://www.meetup.com/meetup-group-dvjyrjdv/events/289456759/).
+Hi there 👋! This is a repo for my [talk on YouTube](https://www.youtube.com/watch?v=xELXz553LCY), from the [Sanity.io Virtual Meetup - Autumn 2022](https://www.meetup.com/meetup-group-dvjyrjdv/events/289456759/).
 
 ## Features
 
