@@ -1,12 +1,12 @@
 import { sveltekit } from '@sveltejs/kit/vite';
-import type { UserConfig } from 'vite';
 import WindiCSS from 'vite-plugin-windicss';
 
-const config: UserConfig = {
+/** @type {import('vite').UserConfig} */
+const config = {
 	plugins: [sveltekit(), WindiCSS()],
-	define: {
-		'process.env': {},
-	},
+	optimizeDeps: {
+		include: ['sanity']
+	}
 };
 
 export default config;

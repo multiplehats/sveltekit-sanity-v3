@@ -1,3 +1,4 @@
+import { defineConfig, type Slug } from 'sanity'
 import { PostsPreview } from './components/PostsPreview';
 import app from '../app';
 
@@ -12,7 +13,7 @@ import authorType from '$lib/config/sanity/schemas/author';
 import postType from '$lib/config/sanity/schemas/post';
 /*------------------------------------*/
 
-export default {
+export default defineConfig({
 	basePath: '/studio',
 	projectId: import.meta.env.VITE_SANITY_PROJECT_ID,
 	dataset: import.meta.env.VITE_SANITY_DATASET,
@@ -47,7 +48,7 @@ export default {
 	document: {
 		productionUrl: async (prev, { document }) => {
 			const url = new URL('/api/preview', location.origin);
-			const secret = process.env.NEXT_PUBLIC_PREVIEW_SECRET;
+			const secret = import.meta.env.VITE_SANITY_PREVIEW_SECRET;
 			if (secret) {
 				url.searchParams.set('secret', secret);
 			}
@@ -67,4 +68,4 @@ export default {
 			}
 		},
 	},
-};
+})
