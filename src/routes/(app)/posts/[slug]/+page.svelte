@@ -29,7 +29,7 @@
         <div>
           <h1 class="text-4xl font-bold">{$postData.post.title}</h1>
           <div class="mt-3 flex items-center">
-            {#if $postData.post.author.picture}
+            {#if $postData.post.author}
             <div class="flex-shrink-0">
               <span class="sr-only">Image</span>
               <img
@@ -49,13 +49,13 @@
             </div>
           </div>
         </div>
-
+        {#if $postData.post.coverImage}
         <img
           class="h-92 w-full object-cover rounded-xl mb-10"
           src={urlForImage($postData.post.coverImage).crop("focalpoint").width(1344).height(736).url()}
           alt=""
         />
-
+        {/if}
         <div>
           {$postData.post.postContent}
         </div>
