@@ -42,11 +42,13 @@
             <a href="/posts/{post.slug}">
               <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
                 <div class="flex-shrink-0">
+                 {#if post.coverImage}
                   <img
                     class="h-48 w-full object-cover"
                     src={urlForImage(post.coverImage).crop("focalpoint").width(826).height(384).url()}
                     alt=""
                   />
+                 {/if}
                 </div>
                 <div class="flex flex-1 flex-col justify-between bg-white p-6">
                   <div class="flex-1">
@@ -63,21 +65,25 @@
                   </div>
                   <div class="mt-6 flex items-center">
                     <div class="flex-shrink-0">
-                      <span class="sr-only">Roel Aufderehar</span>
-                      <img
-                        class="h-10 w-10 rounded-full"
-                        src={urlForImage(post.author.picture).crop("focalpoint").width(256).height(256).url()}
-                        alt=""
-                      />
+                      <span class="sr-only">Author Image</span>
+                        {#if post.author}
+                          <img
+                            class="h-10 w-10 rounded-full"
+                            src={urlForImage(post.author.picture).crop("focalpoint").width(256).height(256).url()}
+                            alt=""
+                          />
+                        {/if}
                     </div>
-                    <div class="ml-3">
-                      <p class="text-sm font-medium text-gray-900">{post.author.name}</p>
-                      <div class="flex space-x-1 text-sm text-gray-500">
-                        <time datetime="2020-03-16">
-                          {new Date(post.date).toLocaleDateString()}
-                        </time>
+                    {#if post.author}
+                      <div class="ml-3">
+                        <p class="text-sm font-medium text-gray-900">{post.author.name}</p>
+                        <div class="flex space-x-1 text-sm text-gray-500">
+                          <time datetime="2020-03-16">
+                            {new Date(post.date).toLocaleDateString()}
+                          </time>
+                        </div>
                       </div>
-                    </div>
+                    {/if}
                   </div>
                 </div>
               </div>
