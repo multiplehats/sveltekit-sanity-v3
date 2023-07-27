@@ -18,20 +18,18 @@
         <a href="https://chrisjayden.com" target="_blank" rel="noreferrer noopener" class="group block flex-shrink-0">
           <div class="flex items-center text-left">
             <div>
-              <img class="inline-block h-9 w-9 rounded-full" src="/avatar.jpg" alt="Chris Jayden avatar" />
+              <img class="inline-block h-9 w-9 rounded-full" src="/logo.svg" alt="Goatnbike logo" />
             </div>
             <div class="ml-3">
-              <p class="text-sm font-medium text-white group-hover:text-gray-100">Chris Jayden</p>
-              <p class="text-xs font-medium text-gray-200 group-hover:text-white">Maker</p>
+              <p class="text-sm font-medium text-white group-hover:text-gray-100">Goatnbike</p>
             </div>
           </div>
         </a>
       </div>
-      <h1 class="text-3xl font-bold text-white sm:text-4xl">Sanity Virtual Meetup</h1>
+      <h1 class="text-3xl font-bold text-white sm:text-4xl">Heading text</h1>
 
       <p class="mx-auto mt-3 max-w-xl text-lg text-gray-500 sm:mt-4">
-        Welcome to the virtual meetup for the Sanity community. This is my talk on how to build a SvelteKit app with
-        Sanity V3.
+        Welcome text in a paragraph
       </p>
     </div>
 
