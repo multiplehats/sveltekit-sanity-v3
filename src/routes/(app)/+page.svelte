@@ -8,14 +8,14 @@
 </script>
 
 <svelte:head>
-  <title>Sanity Virtual Meetup</title>
+  <title>Goatnbike</title>
 </svelte:head>
 
 <div class="relative w-full bg-black min-h-screen px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28">
   <div class="relative mx-auto max-w-7xl">
     <div class="text-center">
       <div class="flex items-center justify-center w-full mb-5">
-        <a href="https://chrisjayden.com" target="_blank" rel="noreferrer noopener" class="group block flex-shrink-0">
+        <a href="https://www.goatnbike.com" target="_blank" rel="noreferrer noopener" class="group block flex-shrink-0">
           <div class="flex items-center text-left">
             <div>
               <img class="inline-block h-9 w-9 rounded-full" src="/logo.svg" alt="Goatnbike logo" />
