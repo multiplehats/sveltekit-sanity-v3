@@ -41,3 +41,12 @@ To preview the build, run:
 ```bash
 pnpm preview
 ```
+
+
+
+https://chrisjayden.com/articles/sveltekit-sanity-v3
+
+https://chrisjayden.com/articles/sveltekit-sanity-content-preview
+
+https://kit.svelte.dev/docs/adapters
+https://www.youtube.com/watch?v=xELXz553LCY
