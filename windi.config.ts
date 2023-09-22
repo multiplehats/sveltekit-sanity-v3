@@ -27,6 +27,7 @@ export default defineConfig({
 		extend: {
 			colors: {
 				discord: '#5865F2',
+				brand: '#2d3e60',
 				dark: {
 					50: 'hsl(240, 4%, 29%)',
 					100: 'hsl(240, 7%, 24%)',

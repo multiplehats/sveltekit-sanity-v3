@@ -19,9 +19,9 @@
 </svelte:head>
 
 {#if $postData?.post}
-  <div class="relative w-full bg-black min-h-screen px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28">
+  <div class="relative w-full bg-dark-400 min-h-screen px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28">
     <div class="relative mx-auto max-w-2xl">
-      <div class="w-full space-y-8">
+      <article class="w-full space-y-8">
         <div>
           <a href="/" class="hover:underline font-bold text-sm text-white">← Back to home</a>
         </div>
@@ -51,15 +51,16 @@
         </div>
         {#if $postData.post.coverImage}
         <img
-          class="h-92 w-full object-cover rounded-xl mb-10"
-          src={urlForImage($postData.post.coverImage).crop("focalpoint").width(1344).height(736).url()}
+          class="h-150 w-full object-cover rounded-xl mb-10"
+          src={urlForImage($postData.post.coverImage).crop("focalpoint").width(1344).url()}
           alt=""
         />
         {/if}
-        <div>
+        <p class="mt-3 text-base">
+          
           {$postData.post.postContent}
-        </div>
-      </div>
+        </p>
+      </article>
     </div>
   </div>
 {/if}
