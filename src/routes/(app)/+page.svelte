@@ -11,27 +11,35 @@
   <title>Goatnbike</title>
 </svelte:head>
 
-<div class="main relative w-full bg-dark-400 min-h-screen px-4 pt-4 pb-20 sm:px-6 lg:px-8 lg:pt-12 lg:pb-28">
+<div class="main relative w-full bg-dark-400 min-h-screen px-4 pt-4 pb-20 sm:px-6 lg:px-24 lg:pt-1 lg:pb-28">
   <div class="relative mx-auto max-w-7xl">
     <div class="text-center">
-      <div class="flex items-center justify-center w-full mb-5">
+      <div class="flex items-center justify-center w-full mb-0">
         <a href="https://www.goatnbike.com" target="_blank" rel="noreferrer noopener" class="group block flex-shrink-0">
           <div class="flex items-center text-left">
             <div>
-              <img class="inline-block h-9 w-9 rounded-full rounded-logo" src="/logo.svg" alt="Goatnbike logo" />
+              <img class="inline-block h-60 w-60 rounded-full rounded-logo" src="/logo.svg" alt="Goatnbike logo" />
             </div>
           </div>
         </a>
       </div>
-      <h1 class="text-3xl font-bold text-brand sm:text-4xl">MTB adventures in Oppdal, Norway - all year !</h1>
+      <h1 class="text-3xl font-bold text-brand sm:text-3xl">MTB adventures in Oppdal, Norway - all year !</h1>
+      <a
+          href="https://www.instagram.com/goatnbike/"
+          title=""
+          role="button"
+          class="inline-flex items-center justify-center px-4 py-2 text-sm font-bold text-brand transition-all duration-200 border border-transparent hover:bg-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand"
+        >
+        <i class="gg-instagram"></i>
+        </a>
     </div>
 
-    <div class="w-full  mt-12">
+    <div class="w-full  mt-8">
       {#if posts && posts.length > 0}
-        <div class="mx-auto grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
+        <div class="mx-auto grid max-w-lg gap-3 lg:max-w-none lg:grid-cols-3">
           {#each posts as post}
             <a href="/posts/{post.slug}">
-              <div class="flex flex-col overflow-hidden rounded-m shadow-lg">
+              <div class="card flex flex-col overflow-hidden rounded-m shadow-lg">
                 <div class="flex-shrink-0">
                  {#if post.coverImage}
                   <img
@@ -41,7 +49,7 @@
                   />
                  {/if}
                 </div>
-                <div class="flex flex-1 flex-col justify-between bg-white p-6">
+                <div class="flex flex-1 flex-col justify-between bg-white p-2 px-4">
                   <div class="flex-1">
                     <div class="mt-2 block">
                       <h2 class="text-xl font-semibold text-brand">
@@ -89,11 +97,10 @@
 </div>
 
 <style>
-
- .rounded-logo {
-  width:10rem;
-  height: auto;
+ .card {
+  height: 100%;
  }
+
 
 
 .main {

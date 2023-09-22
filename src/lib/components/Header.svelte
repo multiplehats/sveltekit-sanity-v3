@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<div class="relative px-4 py-4 sm:px-6 lg:px-8 border-b border-gray-800">
+<div class="relative px-4 py-4 sm:px-6 lg:px-8">
   <div class="relative mx-auto max-w-7xl">
     <div class="flex items-center justify-between">
       <div class="shrink-0">
@@ -9,6 +9,20 @@
           <img class="w-auto h-8" src="/logo.svg" alt="" />
         </a>
       </div>
+
+      <!-- <p class="goatnbike shrink-0 text-4xl font-bold text-brand sm:text-4xl">
+        GOATNBIKE
+      </p> !-->
+
+      <!-- <div class="">
+        <a href="https://www.goatnbike.com" target="_blank" rel="noreferrer noopener" class="group block flex-shrink-0">
+          <div class="flex items-center text-left">
+            <div>
+              <img class="inline-block h-9 w-9 rounded-full rounded-logo" src="/logo.svg" alt="Goatnbike logo" />
+            </div>
+          </div>
+        </a>
+      </div> -->
 
       <p class="shrink-0">
         <a
@@ -58,6 +72,9 @@
   background: currentColor;
   right: 1px;
   top: 1px
+}
+.goatnbike {
+  font-family: 'Inclusive Sans', sans-serif;
 }
 h1,h2, text-base {
 font-family: 'Inclusive Sans', sans-serif;

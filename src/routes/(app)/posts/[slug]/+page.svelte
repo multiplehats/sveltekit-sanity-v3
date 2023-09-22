@@ -3,7 +3,7 @@
   import { postQuery } from "$lib/config/sanity/queries";
   import { urlForImage } from "$lib/config/sanity";
   import type { PageData } from "./$types";
-
+  import Header from "$lib/components/Header.svelte";
   export let data: PageData;
 
   $: ({ initialData, previewMode, slug } = data);
@@ -17,6 +17,7 @@
 <svelte:head>
   <title>{$postData?.post?.title || "Post"}</title>
 </svelte:head>
+<Header />
 
 {#if $postData?.post}
   <div class="relative w-full bg-dark-400 min-h-screen px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28">
