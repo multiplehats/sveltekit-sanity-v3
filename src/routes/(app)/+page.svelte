@@ -24,17 +24,6 @@
         </a>
       </div>
       <h1 class="text-3xl font-bold text-brand sm:text-4xl">MTB adventures in Oppdal, Norway - all year !</h1>
-
-      <p class="mx-auto mt-3 max-w-xl text-lg text-gray-500 sm:mt-4">
-          <a
-            href="https://www.instagram.com/goatnbike/"
-            title=""
-            role="button"
-            class="inline-flex items-center justify-center px-4 py-2 text-sm font-bold text-brand transition-all duration-200 border border-transparent hover:bg-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand"
-          >
-          <i class="gg-instagram"></i>
-          </a>
-      </p>
     </div>
 
     <div class="w-full  mt-12">
@@ -64,10 +53,11 @@
                       </p>
                     </div>
                   </div>
+                  {#if false}
                   <div class="mt-6 flex items-center">
                     <div class="flex-shrink-0">
                       <span class="sr-only">Author Image</span>
-                        {#if post.author}
+                        {#if post.author.picture}
                           <img
                             class="h-10 w-10 rounded-full"
                             src={urlForImage(post.author.picture).crop("focalpoint").width(256).height(256).url()}
@@ -75,17 +65,13 @@
                           />
                         {/if}
                     </div>
-                    {#if post.author}
+                    {#if false}
                       <div class="ml-3">
                         <p class="text-sm font-medium text-gray-900">{post.author.name}</p>
-                        <div class="flex space-x-1 text-sm text-gray-500">
-                          <time datetime="2020-03-16">
-                            {new Date(post.date).toLocaleDateString()}
-                          </time>
-                        </div>
                       </div>
                     {/if}
                   </div>
+                  {/if}
                 </div>
               </div>
             </a>
